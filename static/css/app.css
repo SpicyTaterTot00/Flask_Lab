@@ -1,3 +1,35 @@
-h1{
-    color: blue;
+div{
+    background: limegreen; 
+    
+  }
+  
+  h1 {
+    color:black;
+    text-shadow: 2px 2px limegreen;
+    text-align: center;
+  }  
+  h1 span { 
+    background-color: pink; 
+   }
+  
+ p {
+  color: black;
+    text-align: center;
+ }
+ p span { 
+  background-color: pink; 
+ }
+ ul{
+  color: black;
+  text-align: center;
+  text-align: center;
+  list-style-position: inside;
+ }
+ li span { 
+  background-color: pink; 
+ }
+
+ img {
+  border-radius: 50%;
 }
+ 

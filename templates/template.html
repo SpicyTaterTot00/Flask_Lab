@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+      body {
+        background-image: url('static/images/watermelon.jpg');
+      }
+      </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,7 +16,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">My Resume!</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -19,12 +24,26 @@
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="{{ url_for('hello') }}">Home</a>
               <a class="nav-link" href="{{ url_for('about') }}">About</a>
+              <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
             </div>
           </div>
         </div>
       </nav>
-      {% block content %}
-      {% endblock %}
+      
+      
+              {% block content %}
+    
+              {% endblock %}
+            
+              <footer class="bg-light text-center text-lg-start">
+                <!-- Copyright -->
+                <div class="text-center p-3" style="background-color:limegreen;position:fixed;left:0;bottom:0;width: 100%;">
+                  © 2021 Copyright:
+                  Jessica McFarland
+                </div>
+                <!-- Copyright -->
+              </footer>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
 </html>
